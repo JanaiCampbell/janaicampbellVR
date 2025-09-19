@@ -1,1 +1,4 @@
+# Tell GitHub Pages how to serve Unity WebGL builds
 *.wasm application/wasm
+*.mem application/octet-stream
+*.data application/octet-stream
