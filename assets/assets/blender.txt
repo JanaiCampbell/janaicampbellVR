@@ -1,0 +1,4 @@
+assets/
+    blender/
+        character_pose.png
+        environment_scene.png
