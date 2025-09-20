@@ -1,0 +1,12 @@
+<body>
+  <!-- Text added here -->
+  <h1>Welcome to My VR Portfolio</h1>
+  <p>Explore the interactive VR and Blender projects I created. Click on the scenes below to see them in action! The water simulation scene requires you to use "a" and "d" keys to rotate the cup</p>
+
+  <!-- Existing Unity iframe -->
+  <iframe src="Builds/WebGL/samplescene-watersimulation/" 
+          width="800" 
+          height="600" 
+          style="border:none;">
+  </iframe>
+</body>
