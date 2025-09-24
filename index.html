@@ -9,41 +9,75 @@
       font-family: Arial, sans-serif;
       background: #0d0d0d;
       color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
+      background: #111;
     }
     h1 {
       color: #4dd0e1;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
-    a {
+    p {
+      color: #ccc;
+    }
+    .project-links {
+      margin: 20px 0;
+    }
+    .project-links a {
       display: block;
-      margin: 15px 0;
+      margin: 10px 0;
       font-size: 1.2em;
       color: #4dd0e1;
       text-decoration: none;
     }
-    a:hover {
+    .project-links a:hover {
       text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    img, video {
+      max-width: 100%;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>Janai Campbell VR Projects</h1>
-  <p>Choose a project to explore:</p>
+  <header>
+    <h1>Janai Campbell VR Projects</h1>
+    <p>Choose a project to explore:</p>
+    <div class="project-links">
+      <a href="samplescene-watersimulation/index.html">🌊 Water Simulation Scene</a>
+      <a href="changingsquarescene/index.html">🔳 Changing Square Scene</a>
+      <a href="1stsamplescene/index.html">🧪 First Sample Scene</a>
+      <a href="blendcache_waterball/index.html">💧 Water Ball Scene</a>
+    </div>
+  </header>
 
-  <a href="samplescene-watersimulation/index.html">🌊 Water Simulation Scene</a>
-  <a href="changingsquarescene/index.html">🔳 Changing Square Scene</a>
-  <a href="1stsamplescene/index.html">🧪 First Sample Scene</a>
-  <a href="blendcache_waterball/index.html">💧 Water Ball Scene</a>
-  <IMG SRC="myavatar.png">picture of avatar in Blender</IMG>
-   <IMG SRC="wineglass.png">a beginner project to help me get familiar with blender</IMG>
+  <section>
+    <h2>Blender Projects</h2>
+    <div class="grid">
+      <img src="myavatar.png" alt="Avatar in Blender">
+      <img src="wineglass.png" alt="Wineglass Blender project">
+      <img src="assets/blender/character.png" alt="Blender Character">
+      <video controls>
+        <source src="assets/blender/scene-turntable.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="assets/myrender.png" alt="Blender Render">
+    </div>
+  </section>
 </body>
-
-<h2>Blender Projects</h2>
-<img src="assets/blender/character.png" alt="Blender Character" width="400">
-<video controls width="400">
-  <source src="assets/blender/scene-turntable.mp4" type="video/mp4">
-</video>
-<img src="assets/myrender.png" alt="Blender Render" width="400">
 </html>
